@@ -5,17 +5,5 @@
 
     <link rel="stylesheet" href="{{ "public/stylesheets/main.css">
 
-    {% if page.image %}
-    <meta property="og:image"              content="https://learn.quickpay.net/public/blog/posts/{{page.image}}" />
-    <meta property="og:type"               content="article"/>
-    {% else %}
-    <meta property="og:image"              content="https://learn.quickpay.net/public/gfx/layout/fblogoblack.png" />
-    {% endif %}
-
-    <meta property="og:title"              content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description"        content="{% if page.excerpt %}{{ page.excerpt | strip_html}}{% else %}{{ page.content | strip_html | truncatewords:25 }}{% endif %}" />
-    <meta property="og:url"                content="{{ page.url | prepend: site.url}}"/>
-
-
 
 </head>
